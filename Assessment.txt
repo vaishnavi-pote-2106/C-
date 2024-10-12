@@ -6,35 +6,35 @@ void vegetables(){
 cout<<"These are vegetables."<<endl;
 }
 };
-class Cabage:public vegetables{
+class Cabage:public Vegetables{
 public:
 void cabage(){
 cout<<"This is a cabage."<<endl;
 }
 };
-class Spinach:public cabage{
+class Spinach:public Cabage{
 public:
 void spinach(){
 cout<<"This is a spinach."<<endl;
 }
 };
-class Tomato: public spinach{
+class Tomato: public Spinach{
 public:
 void tomato (){
 cout<<"This is a tomato."<<endl;
 }
 };
-class Potato: public tomato {
+class Potato: public Tomato {
 public:
 void potato(){
 cout<<"This is a potato."<<endl;
 }
 };
 int main(){
-Vegetables myvegetables;
-myvegetables. potato();
-myvegetables. tomato();
-myvegetables. spinach();
-myvegetables. cabage();
+Potato mypotato;
+mypotato.potato();
+mypotato.tomato();
+mypotato.spinach();
+mypotato.cabage();
 return 0;
 }
