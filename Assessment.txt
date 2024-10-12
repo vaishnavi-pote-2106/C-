@@ -1,0 +1,40 @@
+#include<iostream>
+using namespace std;
+class Vegetables{
+public:
+void vegetables(){
+cout<<"These are vegetables."<<endl;
+}
+};
+class Cabage:public vegetables{
+public:
+void cabage(){
+cout<<"This is a cabage."<<endl;
+}
+};
+class Spinach:public cabage{
+public:
+void spinach(){
+cout<<"This is a spinach."<<endl;
+}
+};
+class Tomato: public spinach{
+public:
+void tomato (){
+cout<<"This is a tomato."<<endl;
+}
+};
+class Potato: public tomato {
+public:
+void potato(){
+cout<<"This is a potato."<<endl;
+}
+};
+int main(){
+Vegetables myvegetables;
+myvegetables. potato();
+myvegetables. tomato();
+myvegetables. spinach();
+myvegetables. cabage();
+return 0;
+}
